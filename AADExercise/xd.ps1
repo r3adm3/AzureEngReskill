@@ -1,5 +1,9 @@
-#connect to graph API
-#Connect-MgGraph
+#clearing connection
+Disconnect-MgGraph
+
+#Login to Microsoft Graph API (user/pass details in doc)
+Connect-MgGraph
+
 
 #Read a file containing a list of users into a powershell array. (Tutor will provide file) 
 $users = get-content .\userlist.txt
